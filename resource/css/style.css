@@ -1,0 +1,129 @@
+/* -------------------------------------- */
+/*              BASIC SETTING             */
+/* -------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+/* -------------------------------------- */
+/*              HEADING                   */
+/* -------------------------------------- */
+h1 {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 200%;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0 5px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 50px;
+    color: #ffffff;
+    border: #f39c12 solid 2px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-full {
+    background-color: #f39c12;
+}
+
+.btn-ghost {
+    background-color: transparent;
+}
+
+.btn-ghost:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #f39c12;
+}
+
+.logo {
+    height: 56px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.logo-black { 
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/* Main navi */
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a {
+    color: #ffffff;
+    font-size: 80%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cool-link {
+    display: inline-block;
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f39c12;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+}
+
