@@ -36,11 +36,8 @@ h2 {
     font-size: 180%;
     word-spacing: 2px;
     letter-spacing: 0.5;
-    text-align: center;
 }
-h4{
-    text-align: center;
-}
+
 p{
     font-size: 90%;
     line-height: 145%;
@@ -63,6 +60,22 @@ section{
     width: 100px;
     margin: 0 auto;
     margin-top: 20px;
+}
+
+.text-centered{
+    text-align: center;
+}
+
+.mb-15{
+    margin-bottom: 15px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
 }
 
 /* -------------------------------------- */
@@ -173,4 +186,10 @@ header {
 .box{
     padding: 1%;
     text-align: justify;
+}
+
+.icon-large{
+    font-size: 300%;
+    color: #f39c12;
+    display: block;
 }
