@@ -1,6 +1,7 @@
 /* -------------------------------------- */
 /*              BASIC SETTING             */
 /* -------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,23 +17,57 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+h1,
+h2, h3, h4 {
+    font-weight: 300;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 200%;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    letter-spacing: 0.5;
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+p{
+    font-size: 90%;
+    line-height: 145%;
+}
+/* reusable component */
 .row {
     margin: 0 auto;
     max-width: 1140px;
 }
+
+section{
+    margin: 50px 0;
+}
+
+.line::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #f39c12;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
 /* -------------------------------------- */
 /*              HEADING                   */
 /* -------------------------------------- */
-h1 {
-    margin: 0;
-    color: #ffffff;
-    font-weight: 300;
-    font-size: 200%;
-    letter-spacing: 1px;
-    word-spacing: 4px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
 
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/hero.jpg);
@@ -61,27 +96,27 @@ header {
     transition: background-color 0.2s, color 0.2s;
 }
 
-.btn-full {
+.btn-primary {
     background-color: #f39c12;
 }
 
-.btn-ghost {
+.btn-secondary {
     background-color: transparent;
 }
 
-.btn-ghost:hover {
+.btn-secondary:hover {
     background-color: rgba(255, 255, 255, 0.9);
     color: #f39c12;
 }
 
-.logo {
+.brand {
     height: 56px;
     width: auto;
     float: left;
     margin-top: 20px;
 }
 
-.logo-black { 
+.black-brand {
     display: none;
     height: 50px;
     width: auto;
@@ -101,6 +136,7 @@ header {
     display: inline-block;
     margin-left: 40px;
 }
+
 .main-nav li a {
     color: #ffffff;
     font-size: 80%;
@@ -127,3 +163,14 @@ header {
     width: 100%;
 }
 
+/* section features */
+
+.paragraph-line{
+    width: 70%;
+    margin: 0 15%;
+}
+
+.box{
+    padding: 1%;
+    text-align: justify;
+}
