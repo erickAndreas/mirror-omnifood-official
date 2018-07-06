@@ -179,8 +179,10 @@ header {
 /* section features */
 
 .paragraph-line{
-    width: 70%;
-    margin: 0 15%;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 20px;
 }
 
 .box{
@@ -192,4 +194,65 @@ header {
     font-size: 300%;
     color: #f39c12;
     display: block;
+}
+
+/* MEALS SECTION */
+
+.meals-showcase{
+    width: 100%;
+    list-style: none;
+    margin: 0;
+}
+
+.meals-showcase li {
+    width: 25%;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 0;
+}
+
+.meal-photo {
+    margin: 0;
+    background-color: #000000;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    opacity: 0.7;
+}
+
+.meal-photo:hover {
+    transform: scale(1.15);
+    transition: transform 2s;
+}
+
+/* .caption::after {
+    content: "\f00e";
+    display: block;
+    height: 2px;
+    background: #f39c12;
+    transition: width .2s
+} */
+
+/* WORK STEP SECTION */
+
+.steps-box {
+    margin-top: 30px;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    /* float: right; */
+    padding-right: 3%;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+}
+
+.app-on-screen {
+    width: 55%;
 }
