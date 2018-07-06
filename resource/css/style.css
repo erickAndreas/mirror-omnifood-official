@@ -11,7 +11,7 @@
 }
 
 html {
-    background-color: #ffffff;
+    background-color: #f4f4f4;
     color: #555;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
@@ -55,7 +55,8 @@ p {
 }
 
 section {
-    margin: 80px 0;
+    margin: 40px 0;
+    padding: 40px 0;
 }
 
 .line::after {
@@ -109,6 +110,7 @@ section {
     color: #f39c12;
     display: inline-block;
     text-align: center;
+    margin-right: 10px;
 }
 
 /* .city-feature i a:link,
@@ -126,6 +128,7 @@ header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/hero.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -293,7 +296,6 @@ header {
 }
 
 .works-step div {
-    display: inline-block;
     color: #f39c12;
     float: left;
     font-size: 120%;
@@ -322,4 +324,87 @@ header {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
+}
+
+/* TESTIMONIALS */
+
+.customers-testimonial {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/back-customers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+blockquote {
+    font-style: italic;
+    line-height: 145%;
+    padding: 2%;
+    position: relative;
+    margin: 40px;
+}
+
+blockquote::before {
+    content: '\201C';
+    font-size: 300%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    ;
+}
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin: 10px 0;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+/* PLANS SECTION */
+.section-plans {
+    background: #f4f4f4;
+}
+.plan-box {
+    background: #ffffff;
+    width: 90%;
+    padding: 2%;
+    margin-left: 5%;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.plan-box:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.plan-box div {
+    margin: 5px 0;
+}
+.plan-box ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.plan-price {
+    font-size: 200%;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #f39c12;
+}
+
+.plan-price span {
+    font-size: 60%;
+    font-weight: 300
+}
+
+.plan-price-meal {
+    font-size: 80%;
 }
