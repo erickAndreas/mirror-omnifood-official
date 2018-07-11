@@ -140,7 +140,8 @@ header {
     transform: translate(-50%, -50%);
 }
 
-.btn {
+.btn,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     margin: 0 5px;
@@ -152,7 +153,8 @@ header {
     transition: background-color 0.2s, color 0.2s;
 }
 
-.btn-primary {
+.btn-primary,
+input[type=submit] {
     background-color: #f39c12;
 }
 
@@ -368,9 +370,11 @@ cite img {
 }
 
 /* PLANS SECTION */
+
 .section-plans {
     background: #f4f4f4;
 }
+
 .plan-box {
     background: #ffffff;
     width: 90%;
@@ -414,4 +418,94 @@ cite img {
 
 .plan-price-meal {
     font-size: 80%;
+}
+
+/* form comment */
+
+.form-customers {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 80%;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #555;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* FOOTER */
+
+footer {
+    background: #2c3e50;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.sosial-icons {
+    float: right;
+}
+
+.footer-nav li,
+.sosial-icons li {
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+.footer-nav li a,
+.sosial-icons li a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.sosial-icons {
+    list-style: none;
+}
+
+.footer-nav li a:hover {
+    color: #f39c12;
+}
+
+.copyright {
+    font-size: 90%;
+    color: #f4f4f4;
+}
+
+.sosial-icons li a:hover .ion-logo-facebook {
+    color: #4b7bec;
+}
+
+.sosial-icons li a:hover .ion-logo-twitter {
+    color: #45aaf2;
+}
+
+.sosial-icons li a:hover .ion-logo-googleplus {
+    color: #ff3838;
+}
+
+.sosial-icons li a:hover .ion-logo-pinterest {
+    color: #EA2027;
+}
+
+.sosial-icons li a:hover .ion-logo-instagram {
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    -text-fill-color: transparent;
 }
