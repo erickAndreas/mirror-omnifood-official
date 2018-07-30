@@ -1,7 +1,5 @@
 /* -------------------------------------- */
-
 /*              BASIC SETTING             */
-
 /* -------------------------------------- */
 
 * {
@@ -343,7 +341,7 @@ blockquote {
     line-height: 145%;
     padding: 2%;
     position: relative;
-    margin: 40px;
+    margin-top: 40px;
 }
 
 blockquote::before {
@@ -482,23 +480,23 @@ footer {
     color: #f4f4f4;
 }
 
-.sosial-icons li a:hover .ion-logo-facebook {
+.sosial-icons li a:hover .ion-social-facebook {
     color: #4b7bec;
 }
 
-.sosial-icons li a:hover .ion-logo-twitter {
+.sosial-icons li a:hover .ion-social-twitter {
     color: #45aaf2;
 }
 
-.sosial-icons li a:hover .ion-logo-googleplus {
+.sosial-icons li a:hover .ion-social-googleplus {
     color: #ff3838;
 }
 
-.sosial-icons li a:hover .ion-logo-pinterest {
+.sosial-icons li a:hover .ion-social-pinterest {
     color: #EA2027;
 }
 
-.sosial-icons li a:hover .ion-logo-instagram {
+.sosial-icons li a:hover .ion-Social-instagram {
     background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
